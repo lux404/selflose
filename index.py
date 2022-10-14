@@ -66,13 +66,13 @@ async def bin(bin1):
         raise HTTPException(status_code=404, detail="Bin Not Found")
     return {
         'bin': bin,
-        'bank': bin_data['bank_name'],
+        'bank': bin_data['issuer'],
         'country_iso': bin_data['iso'],
         'country': bin_data['country'],
         'flag': bin_data['flag'],
-        'vendor': bin_data['vendor'],
+        'vendor': bin_data['brand'],
         'type': bin_data['type'],
-        'level': bin_data['level'],
+        'level': bin_data['category'],
         'prepaid': bin_data['prepaid'],                                                                               
     }
 
