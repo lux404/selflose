@@ -66,24 +66,20 @@ async def bin(bin1):
         raise HTTPException(status_code=404, detail="Bin Not Found")
     return {
         'bin': bin,
-        'brand': bin_data['brand'],
-        'type': bin_data['type'],
-        'category': bin_data['category'],
-        'issuer': bin_data['issuer'],
-        'alpha_2': bin_data['alpha_2'],
-        'alpha_3': bin_data['alpha_3'],
+        'bank': bin_data['bank_name'],
+        'country_iso': bin_data['iso'],
         'country': bin_data['country'],
-        'latitude': bin_data['latitude'],
-        'longitude': bin_data['longitude'],
-        'bank_phone': bin_data['bank_phone'],
-        'bank_url': bin_data['bank_url'],
+        'flag': bin_data['flag'],
+        'vendor': bin_data['vendor'],
+        'type': bin_data['type'],
+        'level': bin_data['level'],
         'prepaid': bin_data['prepaid'],                                                                               
     }
 
 
 @app.get("/")
 async def start():
-    return RedirectResponse("http://www.github.com/lux404")
+    return RedirectResponse("http://www.github.com/r0ld3x/adyen-enc-and-bin-info")
 
 
 class Item(BaseModel):
