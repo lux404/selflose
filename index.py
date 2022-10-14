@@ -73,8 +73,6 @@ async def bin(bin1):
         'alpha_2': bin_data['alpha_2'],
         'alpha_3': bin_data['alpha_3'],
         'country': bin_data['country'],
-        'latitude': bin_data['latitude'],
-        'longitude': bin_data['longitude'],
         'bank_phone': bin_data['bank_phone'],
         'bank_url': bin_data['bank_url'],
         'prepaid': bin_data['prepaid'],                                                                               
