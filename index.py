@@ -77,7 +77,13 @@ async def bin(bin1):
         'longitude': bin_data['longitude'],
         'bank_phone': bin_data['bank_phone'],
         'bank_url': bin_data['bank_url'],
+        'prepaid': bin_data['prepaid'],                                                                               
     }
+
+
+@app.get("/")
+async def start():
+    return RedirectResponse("http://www.github.com/lux404")
 
 
 class Item(BaseModel):
