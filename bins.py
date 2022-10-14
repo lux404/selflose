@@ -269,11 +269,11 @@ with open('bins.csv', mode='r', encoding = 'utf-8') as inp, open('bins2.csv', mo
         x2 = {
                 "country": get_iso(x[1]),
                 "iso": x[1],
-                "flag" : x[2],
-                "vendor": x[3],
+                "alpha_2" : x[2],
+                "brand": x[3],
                 "type": x[4],
-                "level": x[5],
-                "bank_name": x[6],
+                "category": x[5],
+                "issuer": x[6],
                 "prepaid": True if x[5] == "PREPAID" else False
             }
         mydict[x[0]] = x2
@@ -281,11 +281,11 @@ with open('bins.csv', mode='r', encoding = 'utf-8') as inp, open('bins2.csv', mo
         x2 = {
                 "country": get_iso(x[1]),
                 "iso": x[1],
-                "flag" : x[2],
-                "vendor": x[3],
+                "alpha_2" : x[2],
+                "brand": x[3],
                 "type": x[4],
-                "level": x[5],
-                "bank_name": x[6],
+                "category": x[5],
+                "issuer": x[6],
                 "prepaid": True if x[5] == "PREPAID" else False
             }
         mydict[x[0]] = x2

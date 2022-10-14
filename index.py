@@ -69,7 +69,7 @@ async def bin(bin1):
         'bank': bin_data['issuer'],
         'country_iso': bin_data['iso'],
         'country': bin_data['country'],
-        'flag': bin_data['flag'],
+        'flag': bin_data['alpha_2'],
         'vendor': bin_data['brand'],
         'type': bin_data['type'],
         'level': bin_data['category'],
